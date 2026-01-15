@@ -34,12 +34,12 @@ const FilterSection = ({ title, options, selected, onChange, multi = false }) =>
                             <span className={`text-sm ${isSelected ? 'text-slate-900 font-bold' : 'text-slate-600 group-hover:text-slate-900'}`}>
                                 {option}
                             </span>
-                             {/* Hidden input for semantics if needed, but div logic works for custom styling */}
+                             {/* Hidden input for semantics */}
                              <input 
                                 type="checkbox" 
-                                className="hidden"
+                                className="sr-only"
                                 checked={isSelected}
-                                onChange={() => onChange(option, !isSelected)} // Toggle generic
+                                onChange={() => onChange(option, !isSelected)}
                              />
                         </label>
                      );
@@ -65,7 +65,7 @@ const Filters = ({ filters, activeFilters, onFilterChange, onClearAll }) => {
     // So Multi-select for everything is safest.
 
     return (
-        <div className="w-64 shrink-0 pr-6 border-r border-slate-200 h-full overflow-y-auto hidden md:block">
+        <div className="w-64 shrink-0 pr-6 border-r border-slate-200 hidden md:block sticky top-24 h-[calc(100vh-8rem)] overflow-y-auto">
             <div className="flex justify-between items-center mb-6">
                 <h2 className="text-lg font-bold text-slate-900">Filters</h2>
                 {(Object.values(activeFilters).some(v => v.length > 0)) && (

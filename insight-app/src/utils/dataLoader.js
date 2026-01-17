@@ -2,6 +2,7 @@ import tesla from '../data/tesla_insights.json';
 import microsoft from '../data/microsoft_insights.json';
 import openai from '../data/openai_insights.json';
 import boeing from '../data/Boeing.json';
+import financialData from '../data/financial_insights.json';
 
 const dataMap = {
   tesla: tesla,
@@ -13,6 +14,11 @@ const dataMap = {
 export const getInsights = (company) => {
   return dataMap[company.toLowerCase()] || [];
 };
+
+export const getFinancialData = (company) => {
+    return financialData.companies.find(c => c.name.toLowerCase() === company.toLowerCase()) || null;
+};
+
 
 export const getAllCompanies = () => {
     return Object.keys(dataMap);

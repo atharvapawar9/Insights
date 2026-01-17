@@ -1,9 +1,10 @@
 import React, { useState, useMemo } from 'react';
 import { Search, Filter, Menu, User } from 'lucide-react';
-import { getInsights, getAllCompanies, getUniqueValues } from './utils/dataLoader';
+import { getInsights, getAllCompanies, getUniqueValues, getFinancialData } from './utils/dataLoader';
 import InsightCard from './components/InsightCard';
 import Filters from './components/Filters';
 import CompanySelector from './components/CompanySelector';
+import FinancialStatsGrid from './components/FinancialStatsGrid';
 
 function App() {
   const allCompanies = getAllCompanies();
@@ -21,6 +22,7 @@ function App() {
 
   // Load Insights
   const insights = useMemo(() => getInsights(selectedCompany), [selectedCompany]);
+  const financialData = useMemo(() => getFinancialData(selectedCompany), [selectedCompany]);
 
   // Derived Filters
   const availableFilters = useMemo(() => ({
@@ -168,6 +170,16 @@ function App() {
 
           {/* Results Grid */}
           <div className="flex-1">
+             {/* Financial Stats Grid */}
+             {financialData && (
+                <div className="mb-8">
+                    <h2 className="text-xl font-bold text-slate-900 tracking-tight mb-4 uppercase">
+                        Financial Overview
+                    </h2>
+                    <FinancialStatsGrid data={financialData} />
+                </div>
+             )}
+
              <div className="mb-8 flex items-end justify-between border-b border-slate-200 pb-4">
                 <h2 className="text-3xl font-bold text-slate-900 tracking-tight">
                   Insights found

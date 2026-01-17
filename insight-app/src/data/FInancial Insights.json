@@ -1,0 +1,113 @@
+{
+  "companies": [
+    {
+      "name": "Boeing",
+      "ticker": "BA",
+      "currency": "USD",
+      "insights": {
+        "revenue": {
+          "latest_year": 2023,
+          "value": 77800,
+          "unit": "million"
+        },
+        "growth": {
+          "revenue_yoy_percent": 17.5,
+          "label": "YoY Revenue Growth"
+        },
+        "stock_price": {
+          "current_price": 210.50,
+          "day_change_percent": 1.2,
+          "52_week_high": 267.54,
+          "52_week_low": 137.03
+        },
+        "market_acquisition": {
+          "market_cap": 127000,
+          "unit": "million",
+          "note": "Market cap reflects investor valuation"
+        }
+      }
+    },
+    {
+      "name": "Tesla",
+      "ticker": "TSLA",
+      "currency": "USD",
+      "insights": {
+        "revenue": {
+          "latest_year": 2023,
+          "value": 96770,
+          "unit": "million"
+        },
+        "growth": {
+          "revenue_yoy_percent": 18.8,
+          "label": "YoY Revenue Growth"
+        },
+        "stock_price": {
+          "current_price": 215.80,
+          "day_change_percent": -0.7,
+          "52_week_high": 299.29,
+          "52_week_low": 138.80
+        },
+        "market_acquisition": {
+          "market_cap": 690000,
+          "unit": "million",
+          "note": "Market cap reflects investor valuation"
+        }
+      }
+    },
+    {
+      "name": "Microsoft",
+      "ticker": "MSFT",
+      "currency": "USD",
+      "insights": {
+        "revenue": {
+          "latest_year": 2024,
+          "value": 245122,
+          "unit": "million"
+        },
+        "growth": {
+          "revenue_yoy_percent": 15.0,
+          "label": "YoY Revenue Growth"
+        },
+        "stock_price": {
+          "current_price": 420.10,
+          "day_change_percent": 0.4,
+          "52_week_high": 468.35,
+          "52_week_low": 309.45
+        },
+        "market_acquisition": {
+          "market_cap": 3120000,
+          "unit": "million",
+          "note": "Market cap reflects investor valuation"
+        }
+      }
+    },
+    {
+      "name": "OpenAI",
+      "ticker": null,
+      "currency": "USD",
+      "insights": {
+        "revenue": {
+          "latest_year": 2024,
+          "value": 2000,
+          "unit": "million",
+          "note": "Estimated (private company)"
+        },
+        "growth": {
+          "revenue_yoy_percent": 100.0,
+          "label": "Estimated Growth"
+        },
+        "stock_price": {
+          "current_price": null,
+          "day_change_percent": null,
+          "52_week_high": null,
+          "52_week_low": null
+        },
+        "market_acquisition": {
+          "market_cap": null,
+          "unit": "million",
+          "note": "Private company (valuation-based, not public market cap)"
+        }
+      }
+    }
+  ]
+}

@@ -46,11 +46,11 @@ const LandingPage = () => {
                             Now Available in Beta
                         </div>
                         <h1 className="text-4xl tracking-tighter font-extrabold text-slate-900 sm:text-5xl md:text-6xl uppercase">
-                            <span className="block xl:inline">Financial Data</span>{' '}
+                            <span className="block xl:inline">Insights</span>{' '}
                             <span className="block text-slate-400 xl:inline">Reimagined</span>
                         </h1>
                         <p className="mt-3 text-base text-slate-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0 font-light">
-                            Unlock the power of your financial data with InsightLens. 
+                            Unlock the power of your data with InsightLens. 
                             Advanced analytics, real-time tracking, and predictive modeling 
                             designed for the modern enterprise.
                         </p>

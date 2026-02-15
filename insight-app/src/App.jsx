@@ -3,14 +3,15 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Dashboard from './pages/Dashboard';
 import LoginPage from './pages/LoginPage';
 
+import LandingPage from './pages/LandingPage';
+
 function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        {/* Redirect root to login for this demo flow */}
-        <Route path="/" element={<Navigate to="/login" replace />} />
       </Routes>
     </BrowserRouter>
   );

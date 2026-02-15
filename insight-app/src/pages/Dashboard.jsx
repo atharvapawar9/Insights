@@ -107,7 +107,7 @@ function Dashboard() {
                 <Filter className="w-5 h-5 text-white" />
               </div>
               <h1 className="text-2xl font-bold tracking-tighter text-slate-900 uppercase">
-                Insight<span className="font-light">LENS</span>
+                Insight<span className="font-light">Lens</span>
               </h1>
             </div>
             
